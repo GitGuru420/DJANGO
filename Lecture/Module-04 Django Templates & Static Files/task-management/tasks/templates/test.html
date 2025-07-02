@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <p class="lal-bg">Hello Test</p>
+    <img src="{% static 'images/image.jpg' %}" alt="">
+    {{names}}
+    <p class="lal-bg">{{age}}</p>
+    {% with count=0 %}
+        {% for name in names %}
+            {% if not name == 'John' %}
+                <p>{{name}}</p>
+            {% endif %}
+            {{ count|add:1 }}
+        {% endfor %}
+    {% endwith %}
+    {{count}}
+
+    {% with a=10 %}
+        <div>Value of a: {{a}}</div>
+    {% endwith %}
+</body>
+</html>
