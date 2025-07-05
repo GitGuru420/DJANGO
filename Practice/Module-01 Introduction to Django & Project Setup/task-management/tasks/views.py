@@ -1,12 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-def home(request):
-    return HttpResponse("Welcome to the task-management system")
+def home_view(request):
+    return HttpResponse("<h1>Welcome to the task management system project.</h1>")
 
-def name(request):
-    return HttpResponse("<h1>My name is Raisul Islam</h1>")
+def contact_view(request):
+    return HttpResponse("This is the contact page. Reach us at contact@taskmangement.com")
 
-def university(request):
-    return HttpResponse("<h1 style='color: red'>SMUCT</h1>")
+def about_view(request):
+    return HttpResponse("About Us: This is the Task Management System where you can manage your tasks effectively.")
+
+def services_view(request):
+    return HttpResponse("Our Services: Task Scheduling, Progress Tracking, and Team Collaboration.")

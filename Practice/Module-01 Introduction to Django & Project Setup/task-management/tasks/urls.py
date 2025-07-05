@@ -1,6 +1,7 @@
 from django.urls import path
-from tasks.views import university
+from tasks.views import about_view, services_view
 
 urlpatterns = [
-    path('university/', university),
+    path('about/', about_view),
+    path('services/', services_view),
 ]
