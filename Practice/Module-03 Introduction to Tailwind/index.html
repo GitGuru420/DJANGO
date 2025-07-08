@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Explore Colors, Fonts, and Borders -->
+    <div class="mb-10">
+        <!-- 1. Add Borders -->
+        <div class="border-4 border-blue-500 p-4">This is a blue bordered box</div>
+        <div class="border-2 border-red-500 p-4 mt-4">This is a red bordered box</div>
+        <div class="border-8 border-green-500 p-4 mt-4">This is a green bordered box</div>
+
+        <!-- 2. Add Fonts -->
+        <h1 class="font-sans text-4xl">This si Sans Font with Large Text</h1>
+        <h2 class="font-serif text-2xl mt-4">This is Serif Font with Medium Text</h2>
+        <p class="font-mono text-lg mt-4">This is Monospace Font with Small Text</p>
+
+        <!-- 3. Add Colors -->
+        <div class="bg-blue-500 text-white p-4">This is a blue background</div>
+        <div class="bg-red-500 text-white p-4 mt-4">This is a red background</div>
+        <div class="bg-green-500 text-white p-4 mt-4">This is a green background</div>
+    </div>
+
+    <!-- Explore Typography, Background, Text, and Border -->
+    <div class="mb-10">
+        <!-- Typography -->
+        <h1 class="text-4xl font-bold">This is a Bold Heading</h1>
+        <p class="text-lg mt-4">This is a paragraph with large text</p>
+        <p class="text-sm italic mt-4">This is a small italic paragraph</p>
+
+        <!-- Background -->
+        <div class="bg-blue-500 text-white p-4">This is a blue background</div>
+        <div class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white p-4 mt-4">This is a gradient
+            background</div>
+
+        <!-- Text Utiliteis -->
+        <p class="text-red-500">This text is red</p>
+        <p class="text-green-500">This text is green</p>
+        <p class="text-blue-700 text-center">This text is centered and blue</p>
+
+        <!-- Borders -->
+        <div class="border-4 border-red-500 p-4">This is a box with red borders</div>
+        <div class="border-2 border-dashed border-green-500 p-4 mt-4">This is a box with green dashed border</div>
+    </div>
+
+    <!-- Explore Widht, Height, Padding, and Margin -->
+    <div>
+        <!-- Widht -->
+        <div class="text-white bg-blue-500 p-4 border-4 border-black w-1/2 mx-auto">This box takes half the width</div>
+        <div class="text-white bg-green-500 p-4 mt-4 border-4 border-black w-1/4 mx-auto">This box takes one-fourth the
+            width</div>
+        <div class="text-white bg-red-500 p-4 my-4 border-4 border-black w-full">This box takes full width</div>
+
+        <!-- Height -->
+        <div class="flex">
+            <div class="mx-auto border-4 text-white bg-blue-500 border-black h-32">This box is 8rem tall</div>
+            <div class="mx-auto border-4 text-white bg-green-500 border-black h-64">This box is 16rem tall</div>
+        </div>
+
+        <!-- Padding -->
+        <div class="flex min-h-screen items-center justify-center gap-2">
+            <div class="border-4 border-black my-4 text-white bg-blue-500 p-4">This box has padding of 1rem</div>
+            <div class="border-4 border-black my-4 text-white bg-green-500 p-8">This box has padding of 2rem</div>
+            <div class="border-4 border-black my-4 text-white bg-red-500 py-6 px-4">This box has top-bottom and
+                horizontal padding</div>
+        </div>
+
+        <!-- Margin -->
+        <div>
+            <div class="border-4 border-black mx-auto text-white bg-blue-500 p-4">This is the first box</div>
+            <div class="border-4 border-black mx-auto text-white bg-green-500 p-4 mt-8">This box has margin-top of 2rem
+            </div>
+            <div class="border-4 border-black mx-auto text-white bg-red-500 p-4 ml-4 mt-4">This box has margin-top 1rem
+                and margin-left 1rem</div>
+            <div class="border-4 border-black mx-auto text-white bg-yellow-500 mt-6 mb-6 ml-auto mr-auto p-4">This box
+                has top-bottom and horizontal margin</div>
+        </div>
+    </div>
+
+    <!-- Flex -->
+    <div class="flex bg-gray-100 p-4 border border-gray-300 justify-between items-center">
+        <div class="bg-blue-500 text-white p-4 m-2">Box-1</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-2</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-3</div>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="bg-blue-500 text-white p-4 m-2">Box-1</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-2</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-3</div>
+    </div>
+
+    <div class="flex flex-row-reverse">
+        <div class="bg-blue-500 text-white p-4 m-2">Box-1</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-2</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-3</div>
+    </div>
+
+    <div class="flex flex-col-reverse">
+        <div class="bg-blue-500 text-white p-4 m-2">Box-1</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-2</div>
+        <div class="bg-blue-500 text-white p-4 m-2">Box-3</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-3 gap-4 p-4 bg-gray-200">
+        <div class="bg-green-500 text-white p-4">Box-1</div>
+        <div class="bg-green-500 text-white p-4">Box-2</div>
+        <div class="bg-green-500 text-white p-4">Box-3</div>
+        <div class="bg-green-500 text-white p-4">Box-4</div>
+        <div class="bg-green-500 text-white p-4">Box-5</div>
+        <div class="bg-green-500 text-white p-4">Box-6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-2 gap-4 p-4 bg-yellow-200">
+        <div class="bg-green-500 text-white p-4">Box-1</div>
+        <div class="bg-green-500 text-white p-4">Box-2</div>
+        <div class="bg-green-500 text-white p-4">Box-3</div>
+        <div class="bg-green-500 text-white p-4">Box-4</div>
+        <div class="bg-green-500 text-white p-4">Box-5</div>
+        <div class="bg-green-500 text-white p-4">Box-6</div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-gray-200">
+        <div class="bg-green-500 text-white p-4">Box-1</div>
+        <div class="bg-green-500 text-white p-4">Box-2</div>
+        <div class="bg-green-500 text-white p-4">Box-3</div>
+        <div class="bg-green-500 text-white p-4">Box-4</div>
+        <div class="bg-green-500 text-white p-4">Box-5</div>
+        <div class="bg-green-500 text-white p-4">Box-6</div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 p-4 bg-purple-200">
+        <div class="p-4 bg-blue-500 col-span-2">Box</div>
+        <div class="p-4 bg-green-500">Box</div>
+        <div class="p-4 bg-red-500 col-span-3">Box</div>
+        <div class="p-4 bg-yellow-500">Box</div>
+    </div>
+</body>
+
+</html>
