@@ -1,7 +1,7 @@
 {% extends "dashboard/dashboard.html" %}
 {% block title %}Manager Dashboard{% endblock title %}
-{% comment %} Task Table {% endcomment %}
 {% block tasks %}
+<!-- Task Table  -->
 <div class="bg-white rounded-xl shadow-sm">
   <div
     class="grid grid-cols-4 p-4 border-b border-gray-100 text-sm text-gray-500"
@@ -11,9 +11,9 @@
     <div>TEAM</div>
     <div>CREATED AT</div>
   </div>
-  {% comment %} Task Items {% endcomment %}
+  <!-- Task Items  -->
   <div class="divide-y divide-gray-100">
-    {% comment %} Task 1 {% endcomment %}
+    <!-- Task 1 -->
     <div class="grid grid-cols-4 gap-4 p-4 items-center">
       <div class="flex items-center gap-2">
         <div class="w-2 h-2 rounded-full bg-green-500"></div>
@@ -44,7 +44,7 @@
       <div class="text-gray-500">9 months ago</div>
     </div>
 
-    {% comment %} Task 2 {% endcomment %}
+    <!-- Task 2 -->
     <div class="grid grid-cols-4 gap-4 p-4 items-center">
       <div class="flex items-center gap-2">
         <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
@@ -75,7 +75,7 @@
       <div class="text-gray-500">9 months ago</div>
     </div>
 
-    {% comment %} Task 3 {% endcomment %}
+    <!-- Task 3 -->
     <div class="grid grid-cols-4 gap-4 p-4 items-center">
       <div class="flex items-center gap-2">
         <div class="w-2 h-2 rounded-full bg-orange-500"></div>

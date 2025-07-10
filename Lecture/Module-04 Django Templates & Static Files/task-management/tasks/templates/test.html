@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
 </head>
 <body>
-    <p class="lal-bg">Hello Test</p>
-    <img src="{% static 'images/image.jpg' %}" alt="">
-    {{names}}
-    <p class="lal-bg">{{age}}</p>
-    {% with count=0 %}
-        {% for name in names %}
-            {% if not name == 'John' %}
-                <p>{{name}}</p>
-            {% endif %}
-            {{ count|add:1 }}
-        {% endfor %}
-    {% endwith %}
-    {{count}}
+    <h1 class="lal-bg">TEST</h1>
+    <img src="{% static "images/images.jpeg" %}" alt="">
+    <br>
 
-    {% with a=10 %}
-        <div>Value of a: {{a}}</div>
-    {% endwith %}
+    {{ names }}
+    <p class="lal-bg">{{ age }}</p>
+    <br>
+    <br>
+
+    {% for name in names %}
+        {% if not name == "John" %}
+            <h3>{{name}}</h3>
+        {% endif %}
+    {% endfor %}
+
+    {{ count }}
 </body>
 </html>

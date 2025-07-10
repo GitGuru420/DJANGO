@@ -8,13 +8,13 @@ def user_dashboard(request):
     return render(request, "dashboard/user-dashboard.html")
 
 def test(request):
-    names = ["Mahmud", "Ahmed", "John", "Sunny Leone"]
+    names = ["Mahmud", "Ahmed", "John", "Jaqob"]
     count = 0
     for name in names:
         count += 1
     context = {
-        "names": ["Mahmud", "Ahmed", "John", "Sunny Leone"],
+        "names" : ["Mahmud", "Ahmed", "John", "Jaqob"],
         "age" : 23,
-        "count": count
+        "count" : count,
     }
     return render(request, "test.html", context)
