@@ -23,5 +23,5 @@ urlpatterns = [
     # path('home/', home),
     path('', home),
     path('contact/', contact),
-    path('tasks/', include('tasks.urls')),
+    path('tasks/', include('tasks.urls'))
 ]
