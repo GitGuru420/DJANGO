@@ -1,0 +1,65 @@
+{% extends "dashboard/dashboard.html" %}
+{% block title %}Manager Dashboard{% endblock title %}
+{% block tasks %}
+{% comment %} table {% endcomment %}
+<div class="bg-white rounded-lg divide-y">
+    <div class="grid grid-cols-4 text-gray-500 font-semibold p-5">
+        <div>TASK TITLE</div>
+        <div>PRIORITY</div>
+        <div>TEAM</div>
+        <div>CREATED AT</div>
+    </div>
+    <div class="grid grid-cols-4 p-5">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-green-700 rounded-full"></div>
+            <span class="bg-red-800 text-white">Test Low Task</span>
+        </div>
+        <div class="flex items-center"><span class="text-blue-500 bg-blue-100 rounded-full px-3 py-1">Low</span>
+        </div>
+        <div class="flex -space-x-2 items-center">
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">CA</button>
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">JS</button>
+            <button class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">B</button>
+        </div>
+        <div class="flex items-center"><span class="text-gray-500">6 months ago</span></div>
+    </div>
+
+    <div class="grid grid-cols-4 p-5">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-amber-700 rounded-full"></div>
+            <span>Test Task</span>
+        </div>
+        <div class="flex items-center"><span class="text-gray-500 bg-gray-100 rounded-full px-3 py-1">Normal</span>
+        </div>
+        <div class="flex -space-x-2 items-center">
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">AJ</button>
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">EV</button>
+            <button class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">B</button>
+        </div>
+        <div class="flex items-center"><span class="text-gray-500">3 months ago</span></div>
+    </div>
+
+    <div class="grid grid-cols-4 p-5">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-red-700 rounded-full"></div>
+            <span>Test Low Task</span>
+        </div>
+        <div class="flex items-center"><span class="text-red-500 bg-red-100 rounded-full px-3 py-1">High</span>
+        </div>
+        <div class="flex -space-x-2 items-center">
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">CA</button>
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">JS</button>
+            <button
+                class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">AJ</button>
+            <button class="bg-blue-500 rounded-full text-white font-semibold w-10 h-10 border-2 border-white">B</button>
+        </div>
+        <div class="flex items-center"><span class="text-gray-500">2 months ago</span></div>
+    </div>
+</div>
+{% endblock tasks %}
